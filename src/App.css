@@ -1,38 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --primary-color: #d72638;
+  --background-color: #fdf6ee;
+  --text-color: #1a1a1a;
+  --serif-font: 'Playfair Display', serif;
+  --sans-font: 'Inter', Arial, sans-serif;
+  --border-radius: 0px;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: var(--sans-font);
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: var(--background-color);
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1, .main-title {
+  font-family: var(--serif-font);
+  font-size: 4rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2.5rem 0 1.5rem 0;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--sans-font);
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p, li {
+  font-family: var(--sans-font);
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #a81c2a;
+}
+
+.upper-nav, .small-text {
+  font-family: var(--sans-font);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+img, .grid img {
+  width: 100%;
+  border-radius: 0;
+  display: block;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+  h1, .main-title {
+    font-size: 2.2rem;
   }
-  to {
-    transform: rotate(360deg);
+  main {
+    padding: 1.5rem 0.5rem;
+  }
+  .grid {
+    gap: 1rem;
   }
 }
