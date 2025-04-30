@@ -13,7 +13,7 @@ function Contact() {
         <strong>Email:</strong> <a href="mailto:nialaaila38@gmail.com">nialaaila38@gmail.com</a><br />
         <strong>GitHub:</strong> <a href="https://github.com/nialaa38" target="_blank" rel="noopener noreferrer">https://github.com/nialaa38</a>
         <br /><br />
-        You can also send me a message through the form below — let's bring creative ideas to life together!
+        You can also send me a message through my social media accounts — let's bring creative ideas to life together!
       </div>
     </div>
   );
